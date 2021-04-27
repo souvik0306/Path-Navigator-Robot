@@ -1,11 +1,13 @@
 clc
 clear all
+%register a predefined path 
 path = [2.00 1.00;
  1.25 1.75;
  5.25 8.25;
  7.25 8.75;
  11.75 10.75;
  12.00 10.00];
+%set initial robot location and goal 
 robotInitialLocation = path(1,:);
 robotGoal = path(end,:);
 initialOrientation = 0;
