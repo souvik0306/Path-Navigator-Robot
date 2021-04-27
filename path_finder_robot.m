@@ -14,5 +14,8 @@ robotRadius = 0.2;
 %inflated map to the PRM takes into account the robot dimension
 mapInflated = copy(map);
 inflate(mapInflated,robotRadius);
-
-show(mapInflated);
+show(mapInflated);   
+%d to define a path planner
+prm = mobileRobotPRM;
+%Assign the inflated map to the PRM object
+prm.Map = mapInflated;
