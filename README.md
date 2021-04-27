@@ -9,3 +9,11 @@ Input Image -
 
 ![image used](https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Input_Path_1.jpg?raw=true)
 
+Output Image - 
+
+1. 
+![image used](https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Output_Path_1.jpg?raw=true)
+
+2. 
+![image used](https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Output_Path_2.jpg?raw=true)
+
