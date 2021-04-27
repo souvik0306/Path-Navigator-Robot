@@ -35,12 +35,6 @@ endLocation = [7 2]
 path = findpath(prm, startLocation, endLocation)
 show(prm)
 
-%load a more complex map
-map = binaryOccupancyMap(complexMap,1)
-show(map)
-mapInflated = copy(map)
-inflate(mapInflated, robotRadius);
-show(mapInflated)
 
 
 
