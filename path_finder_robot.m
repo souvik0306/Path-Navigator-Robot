@@ -1,6 +1,6 @@
 clc 
 clear all 
-%e Probabilistic Roadmap (PRM) path planner
+% Probabilistic Roadmap (PRM) path planner
 % The imported maps are : simpleMap, complexMap and ternaryMap.
 % Example Maps for Planning a Path
 load exampleMaps.mat 
@@ -9,7 +9,7 @@ show(map)
 % To ensure that the robot does not collide with any 
 % obstacles, you should inflate the map by the
 % dimension of the robot before supplying it to the PRM path planner
-robotRadius = 0.2;
+ robotRadius = 0.2;
 % PRM does not account for the dimension of the robot, and hence providing an
 %inflated map to the PRM takes into account the robot dimension
 mapInflated = copy(map);
@@ -31,5 +31,37 @@ prm.ConnectionDistance = 10;
 startLocation = [2 1]
 %define end locationk
 endLocation = [7 2]
+%final path 
 path = findpath(prm, startLocation, endLocation)
 show(prm)
+
+%load a more complex map
+map = binaryOccupancyMap(complexMap,1)
+show(map)
+mapInflated = copy(map)
+inflate(mapInflated, robotRadius);
+show(mapInflated)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
