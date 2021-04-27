@@ -5,6 +5,7 @@ the free space of a given map using randomly sampled nodes in the free space and
 with each other. Once the roadmap has been constructed, you can query for a path from a given start
 location to a given end location on the map.
 
-Input Image
+Input Image - 
+
 ![image used](https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Input_Path_1.jpg?raw=true)
 
