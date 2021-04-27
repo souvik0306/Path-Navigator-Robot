@@ -17,3 +17,5 @@ Output Image -
 2. 
 ![image used](https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Output_Path_2.jpg?raw=true)
 
+3. 
+![image used](https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Output_Path_4.jpg?raw=true)
