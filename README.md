@@ -11,11 +11,14 @@ Input Image -
 
 Output Image - 
 
-1. 
 ![image used](https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Output_Path_1.jpg?raw=true)
 
-2. 
-![image used](https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Output_Path_2.jpg?raw=true)
+Input Image Complex - 
 
-3. 
-![image used](https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Output_Path_4.jpg?raw=true)
+![image used](https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Input_Path_Complex_1.jpg?raw=true)
+
+Output Image Complex - 
+
+![image used](https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Output_Path_Complex_1.jpg?raw=true)
+
+
