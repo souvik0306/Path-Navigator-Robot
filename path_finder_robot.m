@@ -15,21 +15,21 @@ robotRadius = 0.2;
 mapInflated = copy(map);
 inflate(mapInflated,robotRadius);
 show(mapInflated);   
-%to define a path planner
-prm = mobileRobotPRM;
-%Assign the inflated map to the PRM object
-prm.Map = mapInflated;
-%define nodes or points over the map, more 
-% nodes, greater the complexity of the map and 
-% higher computation time
-prm.NumNodes = 20;
-% these denotes the Define the maximum allowed distance
-% between two connected nodes on the map. PRM connects all
-% nodes separated by this distance (or less) on the map
-prm.ConnectionDistance = 10;
-%define start location
-startLocation = [2 1]
-%define end locationk
-endLocation = [8 2]
-path = findpath(prm, startLocation, endLocation)
-show(prm)
+% %to define a path planner
+% prm = mobileRobotPRM;
+% %Assign the inflated map to the PRM object
+% prm.Map = mapInflated;
+% %define nodes or points over the map, more 
+% % nodes, greater the complexity of the map and 
+% % higher computation time
+% prm.NumNodes = 50;
+% % these denotes the Define the maximum allowed distance
+% % between two connected nodes on the map. PRM connects all
+% % nodes separated by this distance (or less) on the map
+% prm.ConnectionDistance = 10;
+% %define start location
+% startLocation = [2 1]
+% %define end locationk
+% endLocation = [12 2]
+% path = findpath(prm, startLocation, endLocation)
+% show(prm)
