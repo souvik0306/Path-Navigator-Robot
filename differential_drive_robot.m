@@ -31,19 +31,63 @@ robot = differentialDriveKinematics("TrackWidth", 1, "VehicleInputs", "VehicleSp
 %Visualize the desired path
 figure
 plot(path(:,1), path(:,2),'k--d')
-xlim([0 15])
-ylim([0 15])
+xlim([0 14])
+ylim([0 14])
 
 % Based on the path defined above and a robot motion model, you need a path following controller to
 % drive the robot along the path.
 controller = controllerPurePursuit;
+%set desired waypoints
+controller.Waypoints = path
 
+%Set the path following controller parameters. The desired linear velocity is set to 0.6 meters/second
+%for this example.
+controller.DesiredLinearVelocity = 2;
+controller. MaxAngularVelocity = 2;
+controller.LookaheadDistance = 0.3;
 
+goalRadius = 0.1;
+distanceToGoal = norm(robotInitialLocation - robotGoal);
 
+% Initialize the simulation loop
+sampleTime = 0.1;
+vizRate = rateControl(1/sampleTime);
+% Initialize the figure
+figure
+% Determine vehicle frame size to most closely represent vehicle with plotTransforms
+frameSize = robot.TrackWidth/0.8;
+while( distanceToGoal > goalRadius )
 
+ % Compute the controller outputs, i.e., the inputs to the robot
+ [v, omega] = controller(robotCurrentPose);
 
+ % Get the robot's velocity using controller inputs
+ vel = derivative(robot, robotCurrentPose, [v omega]);
 
+ % Update the current pose
+ robotCurrentPose = robotCurrentPose + vel*sampleTime;
 
+ % Re-compute the distance to the goal
+ distanceToGoal = norm(robotCurrentPose(1:2) - robotGoal(:));
+
+ % Update the plot
+ hold off
+
+ % Plot path each instance so that it stays persistent while robot mesh
+ % moves
+ plot(path(:,1), path(:,2),"k--d")
+ hold all
+
+ % Plot the path of the robot as a set of transforms
+ plotTrVec = [robotCurrentPose(1:2); 0];
+ plotRot = axang2quat([0 0 1 robotCurrentPose(3)]);
+ plotTransforms(plotTrVec', plotRot, "MeshFilePath", "groundvehicle.stl", "Parent",  gca,"View",'2D', "FrameSize", frameSize);
+ light;
+ xlim([0 13])
+ ylim([0 13])
+
+ waitfor(vizRate);
+end
 
 
 
