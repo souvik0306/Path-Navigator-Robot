@@ -65,7 +65,7 @@ controller.Waypoints = path
 %Set the path following controller parameters. The desired linear velocity is set to 0.6 meters/second
 %for this example.
 controller.DesiredLinearVelocity = 2;
-controller. MaxAngularVelocity = 2;
+controller. MaxAngularVelocity = 9;
 controller.LookaheadDistance = 0.3;
 
 goalRadius = 0.1;
