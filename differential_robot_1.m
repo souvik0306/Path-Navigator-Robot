@@ -24,11 +24,11 @@ endLocation = [12 2];
 path = findpath(prm, startLocation, endLocation)
 show(prm)
 path = [2.00 1.00;
- 1.25 1.75;
- 5.25 8.25;
- 7.25 8.75;
+ 2.25 1.75;
+ 4.25 8.25;
+ 8.25 8.75;
  11.75 10.75;
- 12.00 10.00];
+ 12.00 12.00];
 
 %set initial robot location and goal 
 robotInitialLocation = path(1,:);
@@ -78,47 +78,41 @@ vizRate = rateControl(1/sampleTime);
 figure
 % Determine vehicle frame size to most closely represent vehicle with plotTransforms
 frameSize = robot.TrackWidth/0.8;
+reset(vizRate);
+
+% Initialize the figure
+figure
+
 while( distanceToGoal > goalRadius )
+    
+    % Compute the controller outputs, i.e., the inputs to the robot
+    [v, omega] = controller(robotCurrentPose);
+    
+    % Get the robot's velocity using controller inputs
+    vel = derivative(robot, robotCurrentPose, [v omega]);
+    
+    % Update the current pose
+    robotCurrentPose = robotCurrentPose + vel*sampleTime; 
+    
+    % Re-compute the distance to the goal
+    distanceToGoal = norm(robotCurrentPose(1:2) - robotGoal(:));
+    
+    % Update the plot
+    hold off
+    show(map);
+    hold all
 
- % Compute the controller outputs, i.e., the inputs to the robot
- [v, omega] = controller(robotCurrentPose);
-
- % Get the robot's velocity using controller inputs
- vel = derivative(robot, robotCurrentPose, [v omega]);
-
- % Update the current pose
- robotCurrentPose = robotCurrentPose + vel*sampleTime;
-
- % Re-compute the distance to the goal
- distanceToGoal = norm(robotCurrentPose(1:2) - robotGoal(:));
-
- % Update the plot
- hold off
-
- % Plot path each instance so that it stays persistent while robot mesh
- % moves
- plot(path(:,1), path(:,2),"k--d")
- hold all
-
- % Plot the path of the robot as a set of transforms
- plotTrVec = [robotCurrentPose(1:2); 0];
- plotRot = axang2quat([0 0 1 robotCurrentPose(3)]);
- plotTransforms(plotTrVec', plotRot, "MeshFilePath", "groundvehicle.stl", "Parent",  gca,"View",'2D', "FrameSize", frameSize);
- light;
- xlim([0 15])
- ylim([0 15])
-
- waitfor(vizRate);
+    % Plot path each instance so that it stays persistent while robot mesh
+    % moves
+    plot(path(:,1), path(:,2),"k--d")
+    
+    % Plot the path of the robot as a set of transforms
+    plotTrVec = [robotCurrentPose(1:2); 0];
+    plotRot = axang2quat([0 0 1 robotCurrentPose(3)]);
+    plotTransforms(plotTrVec', plotRot, 'MeshFilePath', 'groundvehicle.stl', 'Parent', gca, "View","2D", "FrameSize", frameSize);
+    light;
+    xlim([0 13])
+    ylim([0 13])
+    
+    waitfor(vizRate);
 end
-
-
-
-
-
-
-
-
-
-
-
-
