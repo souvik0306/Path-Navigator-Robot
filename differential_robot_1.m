@@ -9,60 +9,26 @@ show(map)
 % To ensure that the robot does not collide with any 
 % obstacles, you should inflate the map by the
 % dimension of the robot before supplying it to the PRM path planner
- robotRadius = 0.2;
-% PRM does not account for the dimension of the robot, and hence providing an
-%inflated map to the PRM takes into account the robot dimension
-map = binaryOccupancyMap(complexMap,1)
-show(map)
-
-mapInflated = copy(map);
-inflate(mapInflated,robotRadius);
-show(mapInflated);   
-%to define a path planner
+robotRadius = 0.1
+%load a more complex map
+mapInflated = copy(map)
+inflate(mapInflated, robotRadius);
+show(mapInflated)
 prm = mobileRobotPRM;
-%Assign the inflated map to the PRM object
 prm.Map = mapInflated;
-%define nodes or points over the map, more 
-% nodes, greater the complexity of the map and 
-% higher computation time
-prm.NumNodes = 50;
-% these denotes the Define the maximum allowed distance
-% between two connected nodes on the map. PRM connects all
-% nodes separated by this distance (or less) on the map
+prm.NumNodes = 100;
 prm.ConnectionDistance = 10;
-%define start location
-startLocation = [3 1]
-%define end locationk
-endLocation = [45 35]
+startLocation = [2 1];
+endLocation = [12 2];
 %final path 
 path = findpath(prm, startLocation, endLocation)
-show(prm)
-% For complex maps, there may not be a feasible
-% path for a given number of nodes (returns an empty path).
-path = findpath(prm, startLocation, endLocation);
-while isempty(path)
- % No feasible path found yet, increase the number of nodes
- prm.NumNodes = prm.NumNodes + 10;
-
- % Use the |update| function to re-create the PRM roadmap with the changed
- % attribute
- update(prm);
-
- % Search for a feasible path with the updated PRM
- path = findpath(prm, startLocation, endLocation);
-end
 show(prm)
 path = [2.00 1.00;
  1.25 1.75;
  5.25 8.25;
- 9.25 7.75;
- 9.50  15.00;
- 15.75 5.00;
- 25.00 5.00;
- 27.00 6.00;
- 29.00 15.00;
- 25.00 45.00;
- 29.00 35.00];
+ 7.25 8.75;
+ 11.75 10.75;
+ 12.00 10.00];
 
 %set initial robot location and goal 
 robotInitialLocation = path(1,:);
@@ -110,6 +76,7 @@ sampleTime = 0.1;
 vizRate = rateControl(1/sampleTime);
 % Initialize the figure
 figure
+% Determine vehicle frame size to most closely represent vehicle with plotTransforms
 frameSize = robot.TrackWidth/0.8;
 while( distanceToGoal > goalRadius )
 
@@ -127,19 +94,31 @@ while( distanceToGoal > goalRadius )
 
  % Update the plot
  hold off
- show(map);
- hold all
+
  % Plot path each instance so that it stays persistent while robot mesh
  % moves
  plot(path(:,1), path(:,2),"k--d")
+ hold all
 
  % Plot the path of the robot as a set of transforms
  plotTrVec = [robotCurrentPose(1:2); 0];
  plotRot = axang2quat([0 0 1 robotCurrentPose(3)]);
  plotTransforms(plotTrVec', plotRot, "MeshFilePath", "groundvehicle.stl", "Parent",  gca,"View",'2D', "FrameSize", frameSize);
  light;
- xlim([0 27])
- ylim([0 26])
+ xlim([0 15])
+ ylim([0 15])
 
  waitfor(vizRate);
 end
+
+
+
+
+
+
+
+
+
+
+
+

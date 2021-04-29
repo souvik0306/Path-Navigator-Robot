@@ -16,10 +16,10 @@ inflate(mapInflated, robotRadius);
 show(mapInflated)
 prm = mobileRobotPRM;
 prm.Map = mapInflated;
-prm.NumNodes = 50;
+prm.NumNodes = 100;
 prm.ConnectionDistance = 10;
-startLocation = [3 1]
-endLocation = [45 35]
+startLocation = [4 2]
+endLocation = [24 20]
 %final path 
 path = findpath(prm, startLocation, endLocation)
 show(prm)
