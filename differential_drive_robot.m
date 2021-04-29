@@ -89,27 +89,3 @@ while( distanceToGoal > goalRadius )
  waitfor(vizRate);
 end
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
