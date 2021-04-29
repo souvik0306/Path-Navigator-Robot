@@ -6,7 +6,7 @@ with each other. Once the roadmap has been constructed, you can query for a path
 
 (*Important* - Please make sure you have **Robotics System Toolbox** Add-On installed for your MATLAB)
 
-The following project has been executed in **MATLAB R-2021a** version 
+The following project has been executed in **MATLAB R2021a** version 
 
 Input Image - 
 
