@@ -10,7 +10,7 @@ The following project has been executed in **MATLAB R2021a** version
 
 Input Image - 
 
-![image used](https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Route Map Solved.jpeg?raw=true)
+![image used](https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Route_Map_Solved.jpeg?raw=true)
 
 ![gif used](https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Simulation_1.gif?raw=true)
 
