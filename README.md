@@ -24,6 +24,6 @@ Output Image Complex -
 
 ![image used](https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Output_Path_Complex_1.jpg?raw=true)
 
-![gif used](https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Simulation.gif?raw=true)
+![gif used](https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Simulation_1.gif?raw=true)
 
 ![gif used](https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Simulation_2.gif?raw=true)
