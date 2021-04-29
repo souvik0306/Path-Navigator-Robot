@@ -10,19 +10,7 @@ The following project has been executed in **MATLAB R2021a** version
 
 Input Image - 
 
-![image used](https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Input_Path_1.jpg?raw=true)
-
-Output Image - 
-
-![image used](https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Output_Path_1.jpg?raw=true)
-
-Input Image Complex - 
-
-![image used](https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Input_Path_Complex_1.jpg?raw=true)
-
-Output Image Complex - 
-
-![image used](https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Output_Path_Complex_1.jpg?raw=true)
+![image used](https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Route_Map_Solved.jpeg?raw=true)
 
 ![gif used](https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Simulation_1.gif?raw=true)
 
