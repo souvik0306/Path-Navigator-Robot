@@ -10,7 +10,7 @@ The following project has been executed in **MATLAB R2021a** version
 
 Input Image - 
 
-<img src="https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Route_Map_Solved.jpeg" width="800" height="800">
+<img src="https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Route_Map_Solved.jpeg" width="700" height="600">
 
 Simulation - 
 
