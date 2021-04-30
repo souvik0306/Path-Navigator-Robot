@@ -4,7 +4,7 @@ map using the Probabilistic Roadmap (PRM) path planner. PRM path planner constru
 the free space of a given map using randomly sampled nodes in the free space and connecting them
 with each other. Once the roadmap has been constructed, you can query for a path from a given start location to a given end location on the map.
 
-(*Important* - Please make sure you have **Robotics System Toolbox** Add-On installed for your MATLAB)
+(*Important* - Please make sure you have **Robotics System Toolbox** Add-On installed on your MATLAB)
 
 The following project has been executed in **MATLAB R2021a** version 
 
