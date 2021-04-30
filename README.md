@@ -10,7 +10,7 @@ The following project has been executed in **MATLAB R2021a** version
 
 **Results-**
 
-<img src="https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Route_Map_Solved.jpeg" width="750" height="550">
+<img src="https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Route_Map_Solved.jpeg" width="750" height="700">
 
 **Simulation for Differential Drive Robot-**
 
