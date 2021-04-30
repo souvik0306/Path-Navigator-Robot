@@ -8,11 +8,11 @@ with each other. Once the roadmap has been constructed, you can query for a path
 
 The following project has been executed in **MATLAB R2021a** version 
 
-Input Image - 
+**Results-**
 
 <img src="https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Route_Map_Solved.jpeg" width="700" height="600">
 
-Simulation - 
+**Simulation-**
 
 <img src="https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Simulation_1.gif" width="700" height="600">
 
