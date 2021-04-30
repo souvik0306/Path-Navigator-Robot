@@ -14,6 +14,6 @@ Input Image -
 
 Simulation - 
 
-![gif used](https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Simulation_1.gif?raw=true)
+<img src="https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Simulation_1.gif" width="700" height="600">
 
-![gif used](https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Simulation_2.gif?raw=true)
+<img src="https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Simulation_2.gif" width="700" height="600">
