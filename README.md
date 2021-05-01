@@ -19,7 +19,7 @@ The following project has been executed in **MATLAB R2021a** version
 <img src="https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Simulation_2.gif" width="600" height="300">
 
 **Unknown Mapping Simulation-**
-(*IMPORTANT*: Ensure that ***MappingWithKnownPosesDiffDriveExample*** is added to your MATLAB file path, for convinience I have added that file with the other commits under the header of 'Unknown Mapping'.)
+(*IMPORTANT*: Ensure that ***MappingWithKnownPosesDiffDriveExample*** is added to your MATLAB file path, for convinience I have added that file with the other commits under the header 'Unknown Mapping'.)
 
 <img src="https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Simulation_3.gif" width="600" height="300">
 
