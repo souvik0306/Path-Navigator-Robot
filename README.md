@@ -17,3 +17,8 @@ The following project has been executed in **MATLAB R2021a** version
 <img src="https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Simulation_1.gif" width="700" height="400">
 
 <img src="https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Simulation_2.gif" width="700" height="400">
+
+**Unknown Mapping Simulation-**
+<img src="https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Simulation_3.gif" width="700" height="400">
+
+
