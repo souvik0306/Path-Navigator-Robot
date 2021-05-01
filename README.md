@@ -10,17 +10,17 @@ The following project has been executed in **MATLAB R2021a** version
 
 **Results-**
 
-<img src="https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Route_Map_Solved.jpeg" width="750" height="700">
+<img src="https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Route_Map_Solved.jpeg" width="650" height="600">
 
 **Simulation for Differential Drive Robot-**
 
-<img src="https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Simulation_1.gif" width="700" height="400">
+<img src="https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Simulation_1.gif" width="600" height="300">
 
-<img src="https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Simulation_2.gif" width="700" height="400">
+<img src="https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Simulation_2.gif" width="600" height="300">
 
 **Unknown Mapping Simulation-**
 (*Important* - Ensure that **MappingWithKnownPosesDiffDriveExample** is added to your MATLAB file path)
 
-<img src="https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Simulation_3.gif" width="700" height="400">
+<img src="https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Simulation_3.gif" width="600" height="300">
 
 
