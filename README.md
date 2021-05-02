@@ -24,3 +24,5 @@ The following project has been executed in **MATLAB R2021a** version
 <img src="https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Simulation_3.gif" width="600" height="300">
 
 
+<img src="https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Simulation_4_Simulink.gif" width="600" height="300">
+
