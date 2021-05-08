@@ -6,6 +6,8 @@ with each other. Once the roadmap has been constructed, you can query for a path
 
 (*Important* - Please make sure you have **Robotics System Toolbox** Add-On installed on your MATLAB)
 
+<!--[![Build Status](https://travis-ci.com/petercorke/Path-Navigator-Robot.svg?branch=master)](https://travis-ci.com/petercorke/Path-Navigator-Robot)-->
+
 The following project has been executed in **MATLAB R2021a** version 
 
 **Results-**
