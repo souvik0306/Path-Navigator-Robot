@@ -12,20 +12,20 @@ The following project has been executed in **MATLAB R2021a** version
 
 **Results-**
 
-<img src="https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Route_Map_Solved.jpeg" width="650" height="600">
+<img src="https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Media/Route_Map_Solved.jpeg" width="650" height="600">
 
 **Simulation for Differential Drive Robot-**
 
-<img src="https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Simulation_1.gif" width="600" height="300">
+<img src="https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Media/Simulation_1.gif" width="600" height="300">
 
-<img src="https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Simulation_2.gif" width="600" height="300">
+<img src="https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Media/Simulation_2.gif" width="600" height="300">
 
 **Unknown Mapping Simulation-**
 (*IMPORTANT*: Ensure that ***<code>MappingWithKnownPosesDiffDriveExample</code>*** is added to your MATLAB file path, for convinience I have added that file with the other commits under the header "Unknown Mapping")
 
-<img src="https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Simulation_3.gif" width="600" height="300">
+<img src="https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Media/Simulation_3.gif" width="600" height="300">
 
 **Simulink Simulation-** 
 
-<img src="https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Simulation_4_Simulink.gif" width="600" height="300">
+<img src="https://github.com/souvik0306/Path-Navigator-Robot/blob/master/Media/Simulation_4_Simulink.gif" width="600" height="300">
 
